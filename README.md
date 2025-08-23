@@ -5,9 +5,13 @@ Tooth segmentation and Diagnosis of dental crowding severity on 3D intraoral sca
 In Stage 1, tooth segmentation is performed using an innovative dual-dilated graph convolutional network 1 (DDGCNet1). In Stage 2, Stage 1's output is converted to a point cloud, then processed by DDGCNet2 and post-processing to generate arch length discrepancy (ALD, an indicator of dental crowding). The encoding layers of the proposed networks embed a novel dual-dilated edgeconv module, effectively learning from local features and long-range contextual information of adjacent teeth. 
 
 Requirements:
+
 Python 3.10
+
 PyTorch >= 2.1
+
 CUDA >= 12.0
+
 see requirements.txt for additional dependencies
 
 
