@@ -17,7 +17,10 @@ see requirements.txt for additional dependencies
 ```
 
 ## How to use
-Our code is implemented based on PyTorch. **DDGCNet1** is used for tooth segmentation, while **DDGCNet2** is designed for crown segmentation based on both dental arch boundaries and crown width. Users can set up a PyTorch environment and install the dependencies listed in the requirements.txt file to train the models themselves. Alternatively, pre-trained models can be requested via email at han1024@nuaa.edu.cn for experimental use.
+Our code is implemented based on PyTorch. **DDGCNet1** is used for tooth segmentation, while **DDGCNet2** is designed for crown segmentation based on both dental arch boundaries and crown width. Users can set up a PyTorch environment and install the dependencies listed in the requirements.txt file to train the models themselves. 
+
+## Download of trained model
+Please download the pre-trained model file xxx.ckpt from the GitHub Releases page.[here](https://github.com/abenhamadou/3DTeethSeg22_challenge) <br>
 
 ## Local Installation
 To install the required dependencies, run the following command:
