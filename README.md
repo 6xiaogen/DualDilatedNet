@@ -1,23 +1,33 @@
 # <div align="center"><b>Tooth Segmentation and Dental Crowding Diagnosis Using Two-Stage Dual-Dilated Graph Convolution</b></div>
 
-<div align="center">
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/990d7841-c355-4b13-bffe-4ffe6e81d79f" width="850" height="420" />
+</p>
 
-# <b>Abstract：</b></div>
-</div>
+## Abstract：
 Tooth segmentation and diagnosis of dental crowding severity on 3D intraoral scan models are key processes for computer-aided analysis of orthodontic models. Conventional methods are time-consuming, inefficient, and subjective, necessitating more efficient and intelligent approaches. Therefore, we propose a two-stage intelligent workflow.  
 In **Stage 1**, tooth segmentation is performed using an innovative dual-dilated graph convolutional network (**DDGCNet1**). In **Stage 2**, Stage 1's output is converted to a point cloud, then processed by **DDGCNet2** and post-processing to generate arch length discrepancy (ALD, an indicator of dental crowding). The encoding layers of the proposed networks embed a novel dual-dilated edgeconv module, effectively learning from local features and long-range contextual information of adjacent teeth.  
 
-# <b>Requirements：</b></div>
-
-plaintext
+## Requirements：
+```python
 Python 3.10
 PyTorch >= 2.1
 CUDA >= 12.0
 see requirements.txt for additional dependencies
+```
+
+## How to use
+Our code is implemented based on PyTorch. **DDGCNet1** is used for tooth segmentation, while **DDGCNet2** is designed for crown segmentation based on both dental arch boundaries and crown width. Users can set up a PyTorch environment and install the dependencies listed in the requirements.txt file to train the models themselves. Alternatively, pre-trained models can be requested via email at han1024@nuaa.edu.cn for experimental use.
+
+## Data
+Tooth Segmentation:The data used in this project is the Teeth3DS dataset, which can be downloaded from [here](https://github.com/abenhamadou/3DTeethSeg22_challenge) <br>
+Arch-bounded crown segmentation: The dataset is created by us, and we have made several sets available for download. If readers wish to obtain the dataset we created, they can contact us via email at han1024@nuaa.edu.cn.
+Width-bounded crown segmentation：As above.
 
 
-<img width="779" height="369" alt="image" src="https://github.com/user-attachments/assets/990d7841-c355-4b13-bffe-4ffe6e81d79f" />
+
+
+
 
 
 
