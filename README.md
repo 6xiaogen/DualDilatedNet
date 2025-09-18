@@ -37,9 +37,6 @@ data
         | raw
             | lower
             | upper
-            | private-testing-set.txt
-            | public-training-set-1.txt
-            | public-training-set-2.txt
             | testing_lower.txt
             | testing_upper.txt
             | training_lower.txt
