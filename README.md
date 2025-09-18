@@ -21,6 +21,7 @@ Our code is implemented based on PyTorch. **DDGCNet1** is used for tooth segment
 
 ## Data
 **Tooth Segmentation**:The data used in this project is the Teeth3DS dataset, which can be downloaded from [here](https://github.com/abenhamadou/3DTeethSeg22_challenge) <br>
+
 **Arch-bounded crown segmentation**: The dataset is created by us, and we have made several sets available for download. If readers wish to obtain the dataset we created, they can contact us via email at han1024@nuaa.edu.cn.
 The "data" file contains network data, with train_data and test_data representing the data used during the training and testing processes, respectively. The data for each tooth model is saved in a separate txt file, with the content as follows:
 ```python
@@ -34,9 +35,15 @@ The "data" file contains network data, with train_data and test_data representin
 …………
 ```
 The second-to-last data point is the tooth number, and the last number represents either the internal or external label, with the dental arch serving as the boundary.
+
 **Width-bounded crown segmentation**：As above.
 
-
+## Special Thanks
+The code in this repository is based on the following repositories:
+- [DGCNN](https://github.com/antao97/dgcnn.pytorch)
+- [dilated_tooth_seg_net](https://github.com/LucasKre/dilated_tooth_seg_net.git)
+- [PointNet2](https://github.com/erikwijmans/Pointnet2_PyTorch)
+- [PointNet](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)
 
 
 
