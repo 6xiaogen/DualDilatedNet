@@ -20,9 +20,21 @@ see requirements.txt for additional dependencies
 Our code is implemented based on PyTorch. **DDGCNet1** is used for tooth segmentation, while **DDGCNet2** is designed for crown segmentation based on both dental arch boundaries and crown width. Users can set up a PyTorch environment and install the dependencies listed in the requirements.txt file to train the models themselves. Alternatively, pre-trained models can be requested via email at han1024@nuaa.edu.cn for experimental use.
 
 ## Data
-Tooth Segmentation:The data used in this project is the Teeth3DS dataset, which can be downloaded from [here](https://github.com/abenhamadou/3DTeethSeg22_challenge) <br>
-Arch-bounded crown segmentation: The dataset is created by us, and we have made several sets available for download. If readers wish to obtain the dataset we created, they can contact us via email at han1024@nuaa.edu.cn.
-Width-bounded crown segmentation：As above.
+**Tooth Segmentation**:The data used in this project is the Teeth3DS dataset, which can be downloaded from [here](https://github.com/abenhamadou/3DTeethSeg22_challenge) <br>
+**Arch-bounded crown segmentation**: The dataset is created by us, and we have made several sets available for download. If readers wish to obtain the dataset we created, they can contact us via email at han1024@nuaa.edu.cn.
+The "data" file contains network data, with train_data and test_data representing the data used during the training and testing processes, respectively. The data for each tooth model is saved in a separate txt file, with the content as follows:
+```python
+29.343200 10.423900 -90.281000 0.004916 -0.002189 0.003073 3.000000 0
+29.380800 10.475500 -90.313700 0.012912 -0.004292 0.007224 3.000000 0
+29.389800 10.527000 -90.289500 0.010063 -0.005052 0.004136 3.000000 0
+29.419200 10.580700 -90.297000 0.005329 -0.002501 0.002165 3.000000 0
+-18.442100 1.726450 -85.220300 0.012413 0.006148 0.010642 12.000000 1
+-18.438900 1.998520 -86.188100 0.006604 0.013450 0.010322 12.000000 1
+-18.434300 1.895030 -85.473100 0.002395 0.005126 0.000941 12.000000 1
+…………
+```
+The second-to-last data point is the tooth number, and the last number represents either the internal or external label, with the dental arch serving as the boundary.
+**Width-bounded crown segmentation**：As above.
 
 
 
